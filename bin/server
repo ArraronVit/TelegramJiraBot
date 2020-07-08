@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+import app from '../config/app'
+import http from 'http'
+import handler from '../helpers/handler'
+
+/**
+ * Get port from environment and store in Express.
+ */
+app.set('port', process.env.PORT)
+
+/**
+ * Create HTTP server.
+ */
+const server = http.createServer(app)
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+server.listen(process.env.PORT)
+server.on('error', handler.onError)
+server.on('listening', handler.onListening)

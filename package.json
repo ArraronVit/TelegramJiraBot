@@ -1,0 +1,25 @@
+{
+  "name": "TelegramJiraBot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node -r dotenv/config -r esm ./bin/server",
+    "startDebug": "DEBUG=* node -r dotenv/config -r esm ./bin/server"
+  },
+  "dependencies": {
+    "async-redis": "^1.1.7",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "~4.16.1",
+    "express-async-errors": "^3.1.1",
+    "http-errors": "~1.6.3",
+    "mailgun.js": "^2.0.1",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.0",
+    "node-telegram-bot-api": "^0.50.0",
+    "redis": "^3.0.2",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {}
+}
